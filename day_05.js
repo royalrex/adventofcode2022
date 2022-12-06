@@ -32,7 +32,6 @@
     const ship2 = ship.map(c => [...c]);
 
     for (const move of moves) {
-        console.log(move);
         for (let m = 0; m < move.crates; m++) {
             ship1[move.to].push(ship1[move.from].pop());
         }
